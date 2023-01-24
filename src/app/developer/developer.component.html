@@ -1,0 +1,7 @@
+<p>prenom : {{myDeveloper.firstName}}</p>
+<p>nom : {{myDeveloper.lastName}}</p>
+<p>age: {{myDeveloper.age}}</p>
+<p>sexe: {{myDeveloper.gender}}</p>
+<p>biographie: {{myDeveloper.bio}}</p>
+
+<app-skill *ngFor="let item of myDeveloper.skills" [nomCompetance]="item.name" [logo]="item.logo" [site]="item.site"></app-skill>
